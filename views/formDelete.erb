@@ -1,0 +1,18 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="/style2.css">
+</head>
+
+<% if @task["status"]=="404" %>
+<p>Task not found!!</p>
+<% elsif %>
+<form action="/<%= @task["id"] %>/deleteTask" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete task">
+  <a href="/" type="button">Don't delete task</a>
+</form>
+<% end %>
+
+
+
+
+

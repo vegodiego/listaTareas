@@ -1,0 +1,33 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="/style1.css">
+</head>
+
+<h1>MY TASKS</h1>
+<form action="/new" method="post">
+  <input type="text" placeholder="add task" name="newTask">
+  <input type="submit" value="create task">
+</form>
+<h2>Complete tasks</h2>
+
+<% @database.each do |i| %>
+<% if i["done"]==true %>
+<div>
+  <p><%= i["title"] %></p>
+  <a href="/<%= i["id"] %>/delete">delete</a>
+</div>
+<% end %>
+<% end %>
+
+<h2>Incomplete tasks</h2>
+
+<% @database.each do |i| %>
+<% if i["done"]==false %>
+<div>
+  <p><%= i["title"] %></p>
+  <a href="/<%= i["id"] %>/complete">complete</a>
+  <a href="/<%= i["id"] %>/delete">delete</a>
+</div>
+<% end %>
+<% end %>
+
+

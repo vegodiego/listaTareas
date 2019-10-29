@@ -1,0 +1,18 @@
+a{
+	-webkit-appearance: push-button;
+	user-select: none;
+	white-space: pre;
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	color: buttontext;
+	background-color: buttonface;
+	box-sizing: border-box;
+	padding: 1px 6px;
+	border-width: 2px;
+	border-style: outset;
+	border-color: buttonface;
+	border-image: initial;
+	font: 400 13.3333px Arial;
+	text-decoration: none;
+}
