@@ -1,12 +1,12 @@
 div{
-	margin-top: 10px;
-	border:1px solid black; 
-	padding: 5px;
+    margin-top: 10px;
+    border:1px solid black; 
+    padding: 5px;
 }
 p{
-	margin-bottom: 5px;
-	margin-top: 0px;
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
 div:ntn-child(odd){
-	background: silver;
+    background: silver;
 }
